@@ -28,7 +28,7 @@ class _JoinState extends State<Join> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('회원가입', style: TextStyle(color: Colors.black),),
+        title: Text('두번째 회원가입', style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.white,
         centerTitle: true,
         elevation: 0.0,
