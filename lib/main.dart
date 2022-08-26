@@ -28,7 +28,7 @@ class _JoinState extends State<Join> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('두번째 회원가입', style: TextStyle(color: Colors.black),),
+        title: Text('회원가입', style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.white,
         centerTitle: true,
         elevation: 0.0,
@@ -83,7 +83,7 @@ class _JoinState extends State<Join> {
                                   ),
                                   SizedBox(width: 5.0),
                                   OutlinedButton(
-                                    child: Text('인증'),
+                                    child: Text('중복확인'),
                                     onPressed: (){},
                                     style: OutlinedButton.styleFrom(
                                         primary: Colors.green,
@@ -120,14 +120,14 @@ class _JoinState extends State<Join> {
                                   Expanded(
                                       child: TextField(
                                         decoration: InputDecoration(
-                                            labelText: '전화번호'
+                                            labelText: '닉네임'
                                         ),
-                                        keyboardType: TextInputType.number,
+                                        keyboardType: TextInputType.text,
                                       ),
                                   ),
                                   SizedBox(width: 5.0),
                                   OutlinedButton(
-                                    child: Text('인증'),
+                                    child: Text('중복확인'),
                                     onPressed: (){},
                                     style: OutlinedButton.styleFrom(
                                       primary: Colors.green,
@@ -140,7 +140,36 @@ class _JoinState extends State<Join> {
                                   )
                                 ],
                               )
-                            )
+                            ),
+                            SizedBox(height: 15.0),
+                            TextField(
+                              decoration: InputDecoration(
+                                  labelText: '학과'
+                              ),
+                              keyboardType: TextInputType.text,
+                            ),
+                            SizedBox(height: 15.0),
+                            TextField(
+                              decoration: InputDecoration(
+                                  labelText: '학번'
+                              ),
+                              keyboardType: TextInputType.text,
+                            ),
+                            SizedBox(height: 15.0),
+                            TextField(
+                              decoration: InputDecoration(
+                                  labelText: '성별'
+                              ),
+                              keyboardType: TextInputType.text,
+                            ),
+                            SizedBox(height: 15.0),
+                            TextField(
+                              decoration: InputDecoration(
+                                  labelText: '나이'
+                              ),
+                              keyboardType: TextInputType.text,
+                            ),
+                            SizedBox(height: 15.0),
                           ],
                         ),
                       ))
