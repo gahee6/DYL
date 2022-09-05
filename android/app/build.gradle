@@ -46,8 +46,8 @@ android {
         applicationId "com.example.join_practice"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 16
+        versionName 30
     }
 
     buildTypes {
